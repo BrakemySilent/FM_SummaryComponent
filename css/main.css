@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.result {
+  background-color: hsl(0deg, 0%, 100%);
+}
+.result__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.result__card-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem;
+  background: linear-gradient(0deg, rgb(46, 43, 233) 29%, rgb(46, 43, 233) 37%, rgb(120, 87, 255) 71%);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  overflow: hidden;
+}
+.result__title {
+  font-size: 1.6rem;
+  color: hsl(241deg, 100%, 89%);
+}
+.result__circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 12rem;
+  height: 12rem;
+  margin-top: 2rem;
+  background: linear-gradient(0deg, rgba(36, 33, 202, 0) 7%, rgb(78, 33, 202) 60%);
+  border-radius: 100px;
+}
+.result__circle-points {
+  display: inline-block;
+  font-size: 1.4rem;
+  color: hsl(241deg, 100%, 89%);
+}
+.result__circle-points span {
+  display: block;
+  font-size: 3.6rem;
+  font-weight: 800;
+  color: hsl(0deg, 0%, 100%);
+}
+.result__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.result__description-rating {
+  font-size: 2rem;
+  color: hsl(0deg, 0%, 100%);
+}
+.result__description-text {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.3rem;
+  color: hsl(241deg, 100%, 89%);
+}
+
+@media (min-width: 768px) {
+  .result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: auto;
+  }
+  .result__wrapper {
+    width: 50%;
+  }
+  .result__card-score {
+    padding: 2rem;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  .result__title {
+    font-size: 2.5rem;
+  }
+  .result__circle {
+    width: 16rem;
+    height: 16rem;
+  }
+  .result__circle-points {
+    font-size: 1.8rem;
+  }
+  .result__circle-points span {
+    display: block;
+    font-size: 4rem;
+  }
+  .result__description-rating {
+    font-size: 3rem;
+  }
+  .result__description-text {
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 1200px) {
+  .result__wrapper {
+    flex-direction: row;
+  }
+  .result__card-score {
+    width: 50%;
+  }
+}/*# sourceMappingURL=main.css.map */
